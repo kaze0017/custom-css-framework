@@ -1,0 +1,44 @@
+.btn {
+  padding: 5px;
+  border: 1px solid gray;
+  font-size: 1.5rem;
+}
+
+$button-sizes: (
+  s: 60px,
+  m: 100px,
+  l: 200px,
+);
+
+$button-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: $warning-color,
+  danger: $danger-color,
+);
+
+// Create utility classes for button sizes
+@each $size, $width in $button-sizes {
+  .#{$size} {
+    width: $width;
+  }
+}
+
+// Create utility classes for button colors
+@each $color, $bg-color in $button-colors {
+  .btn-#{$color} {
+    @extend .btn;
+    background-color: $bg-color;
+  }
+}
+
+// Create utility classes for button sizes and colors
+@each $size, $width in $button-sizes {
+  @each $color, $bg-color in $button-colors {
+    .btn-#{$color}-#{$size} {
+      @extend .btn-#{$color};
+      @extend .#{$size};
+    }
+  }
+}

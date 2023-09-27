@@ -1,0 +1,9 @@
+@import "resetDefault";
+
+@import "variables";
+@import "utilities";
+@import "buttons";
+
+h1 {
+  color: $primary-color;
+}

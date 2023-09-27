@@ -1,0 +1,231 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-centered {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-container, .flex-container-row-centered, .flex-container-col-centered {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.flex-container-col-centered {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container-row-centered {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-s {
+  margin: -5px;
+}
+.g-s > * {
+  margin: 5px;
+}
+
+.g-m {
+  margin: -10px;
+}
+.g-m > * {
+  margin: 10px;
+}
+
+.g-l {
+  margin: -15px;
+}
+.g-l > * {
+  margin: 15px;
+}
+
+.btn, .btn-danger, .btn-danger-l, .btn-danger-m, .btn-danger-s, .btn-warning, .btn-warning-l, .btn-warning-m, .btn-warning-s, .btn-success, .btn-success-l, .btn-success-m, .btn-success-s, .btn-secondary, .btn-secondary-l, .btn-secondary-m, .btn-secondary-s, .btn-primary, .btn-primary-l, .btn-primary-m, .btn-primary-s {
+  padding: 5px;
+  border: 1px solid gray;
+  font-size: 1.5rem;
+}
+
+.s, .btn-danger-s, .btn-warning-s, .btn-success-s, .btn-secondary-s, .btn-primary-s {
+  width: 60px;
+}
+
+.m, .btn-danger-m, .btn-warning-m, .btn-success-m, .btn-secondary-m, .btn-primary-m {
+  width: 100px;
+}
+
+.l, .btn-danger-l, .btn-warning-l, .btn-success-l, .btn-secondary-l, .btn-primary-l {
+  width: 200px;
+}
+
+.btn-primary, .btn-primary-l, .btn-primary-m, .btn-primary-s {
+  background-color: #007bff;
+}
+
+.btn-secondary, .btn-secondary-l, .btn-secondary-m, .btn-secondary-s {
+  background-color: #6c757d;
+}
+
+.btn-success, .btn-success-l, .btn-success-m, .btn-success-s {
+  background-color: #28a745;
+}
+
+.btn-warning, .btn-warning-l, .btn-warning-m, .btn-warning-s {
+  background-color: #ffc107;
+}
+
+.btn-danger, .btn-danger-l, .btn-danger-m, .btn-danger-s {
+  background-color: #dc3545;
+}
+
+h1 {
+  color: #007bff;
+}
+
+/*# sourceMappingURL=main.css.map */
