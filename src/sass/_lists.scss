@@ -1,0 +1,77 @@
+@use "sass:map";
+
+$list-styles: (
+  none: "none",
+  disk: "●",
+  square: "■",
+  box: "▢",
+  boxChecked: "☑",
+  boxCrossed: "⛝",
+);
+
+$colors: (
+  none: "none",
+  success: $success-color,
+  danger: $danger-color,
+);
+
+ul {
+  list-style: none;
+}
+
+.list-item {
+  font-size: 1.1rem;
+  padding: 2px;
+}
+
+// Define a mixin for common styles
+@mixin common-styles {
+  @extend .list-item;
+  position: relative;
+  color: black;
+}
+
+// Iterate through list-styles and states to generate styles
+@each $styleProperty, $styleValue in $list-styles {
+  @if $styleValue != "none" {
+    @each $colorProperty, $colorValue in $colors {
+      @if $colorValue != "none" {
+        .list-item-#{$styleProperty}-#{$colorProperty} {
+          @include common-styles;
+          color: $colorValue;
+          &::before {
+            left: -20px;
+            top: -2px;
+            content: $styleValue;
+          }
+        }
+      }
+      @if $colorValue == "none" {
+        .list-item-#{$styleProperty} {
+          @include common-styles;
+          &::before {
+            left: -20px;
+            top: -2px;
+            content: $styleValue;
+          }
+        }
+      }
+    }
+  }
+  @if $styleValue == "none" {
+    @each $colorProperty, $colorValue in $colors {
+      @if $colorValue != "none" {
+        .list-item-#{$colorProperty} {
+          @include common-styles;
+          color: $colorValue;
+        }
+      }
+      @if $colorValue == "none" {
+        .list-item {
+          @include common-styles;
+          color: black;
+        }
+      }
+    }
+  }
+}

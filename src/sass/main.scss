@@ -3,7 +3,12 @@
 @import "variables";
 @import "utilities";
 @import "buttons";
+@import "lists";
 
 h1 {
   color: $primary-color;
+}
+
+.options {
+  border: 2px solid purple;
 }

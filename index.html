@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="flex-container-col-centered g-m">
+      <div class="options flex-container-col-centered g-m">
         <h1>Template for the CSS</h1>
         <h2>Options for Buttons</h2>
         <label for="btn-text">Type Somthing</label>
@@ -96,11 +96,98 @@
               Large (200px)
             </label>
           </div>
-          <div>
-            <p>Output:</p>
-            <input type="text" id="generatedBtnClass" value="btn" readonly />
-            <button id="btnCopyButton" onclick="copyText()">Copy</button>
-          </div>
+        </div>
+        <div>
+          <p>Output:</p>
+          <input type="text" id="generatedBtnClass" value="btn" readonly />
+          <button id="btnCopyButton">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- List ------------------- -->
+    <div class="wrapper lists">
+      <div class="options flex-container-col-centered g-m">
+        <ul>
+          <li id="sampleLi" class="list-item-boxChecked-success">List Item</li>
+        </ul>
+
+        <!-- Color Selection -->
+        <div>
+          <p>Select Color:</p>
+          <label>
+            <input class="li-color" type="radio" name="li-color" value="none" />
+            None
+          </label>
+          <label>
+            <input
+              class="li-color"
+              type="radio"
+              name="li-color"
+              value="success"
+              checked
+            />
+            Success
+          </label>
+          <label>
+            <input
+              class="li-color"
+              type="radio"
+              name="li-color"
+              value="danger"
+            />
+            Danger
+          </label>
+        </div>
+
+        <!-- Style Selection -->
+        <div>
+          <p>Select Style:</p>
+          <label>
+            <input class="li-style" type="radio" name="style" value="none" />
+            None
+          </label>
+          <label>
+            <input class="li-style" type="radio" name="style" value="disk" />
+            disk
+          </label>
+          <label>
+            <input class="li-style" type="radio" name="style" value="square" />
+            square
+          </label>
+          <label>
+            <input class="li-style" type="radio" name="style" value="box" />
+            box
+          </label>
+          <label>
+            <input
+              class="li-style"
+              type="radio"
+              name="style"
+              value="boxChecked"
+              checked
+            />
+            boxChecked
+          </label>
+          <label>
+            <input
+              class="li-style"
+              type="radio"
+              name="style"
+              value="boxCrossed"
+            />
+            boxCrossed
+          </label>
+        </div>
+        <div>
+          <p>Output:</p>
+          <input
+            type="text"
+            id="generatedLiClass"
+            value="list-item-boxChecked-success"
+            readonly
+          />
+          <button id="liCopyButton">Copy</button>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -224,8 +225,199 @@ table {
   background-color: #dc3545;
 }
 
+ul {
+  list-style: none;
+}
+
+.list-item, .list-item-boxCrossed-danger, .list-item-boxCrossed-success, .list-item-boxCrossed, .list-item-boxChecked-danger, .list-item-boxChecked-success, .list-item-boxChecked, .list-item-box-danger, .list-item-box-success, .list-item-box, .list-item-square-danger, .list-item-square-success, .list-item-square, .list-item-disk-danger, .list-item-disk-success, .list-item-disk, .list-item-danger, .list-item-success {
+  font-size: 1.1rem;
+  padding: 2px;
+}
+
+.list-item, .list-item-boxCrossed-danger, .list-item-boxCrossed-success, .list-item-boxCrossed, .list-item-boxChecked-danger, .list-item-boxChecked-success, .list-item-boxChecked, .list-item-box-danger, .list-item-box-success, .list-item-box, .list-item-square-danger, .list-item-square-success, .list-item-square, .list-item-disk-danger, .list-item-disk-success, .list-item-disk, .list-item-danger, .list-item-success {
+  position: relative;
+  color: black;
+  color: black;
+}
+
+.list-item-success {
+  position: relative;
+  color: black;
+  color: #28a745;
+}
+
+.list-item-danger {
+  position: relative;
+  color: black;
+  color: #dc3545;
+}
+
+.list-item-disk {
+  position: relative;
+  color: black;
+}
+.list-item-disk::before {
+  left: -20px;
+  top: -2px;
+  content: "●";
+}
+
+.list-item-disk-success {
+  position: relative;
+  color: black;
+  color: #28a745;
+}
+.list-item-disk-success::before {
+  left: -20px;
+  top: -2px;
+  content: "●";
+}
+
+.list-item-disk-danger {
+  position: relative;
+  color: black;
+  color: #dc3545;
+}
+.list-item-disk-danger::before {
+  left: -20px;
+  top: -2px;
+  content: "●";
+}
+
+.list-item-square {
+  position: relative;
+  color: black;
+}
+.list-item-square::before {
+  left: -20px;
+  top: -2px;
+  content: "■";
+}
+
+.list-item-square-success {
+  position: relative;
+  color: black;
+  color: #28a745;
+}
+.list-item-square-success::before {
+  left: -20px;
+  top: -2px;
+  content: "■";
+}
+
+.list-item-square-danger {
+  position: relative;
+  color: black;
+  color: #dc3545;
+}
+.list-item-square-danger::before {
+  left: -20px;
+  top: -2px;
+  content: "■";
+}
+
+.list-item-box {
+  position: relative;
+  color: black;
+}
+.list-item-box::before {
+  left: -20px;
+  top: -2px;
+  content: "▢";
+}
+
+.list-item-box-success {
+  position: relative;
+  color: black;
+  color: #28a745;
+}
+.list-item-box-success::before {
+  left: -20px;
+  top: -2px;
+  content: "▢";
+}
+
+.list-item-box-danger {
+  position: relative;
+  color: black;
+  color: #dc3545;
+}
+.list-item-box-danger::before {
+  left: -20px;
+  top: -2px;
+  content: "▢";
+}
+
+.list-item-boxChecked {
+  position: relative;
+  color: black;
+}
+.list-item-boxChecked::before {
+  left: -20px;
+  top: -2px;
+  content: "☑";
+}
+
+.list-item-boxChecked-success {
+  position: relative;
+  color: black;
+  color: #28a745;
+}
+.list-item-boxChecked-success::before {
+  left: -20px;
+  top: -2px;
+  content: "☑";
+}
+
+.list-item-boxChecked-danger {
+  position: relative;
+  color: black;
+  color: #dc3545;
+}
+.list-item-boxChecked-danger::before {
+  left: -20px;
+  top: -2px;
+  content: "☑";
+}
+
+.list-item-boxCrossed {
+  position: relative;
+  color: black;
+}
+.list-item-boxCrossed::before {
+  left: -20px;
+  top: -2px;
+  content: "⛝";
+}
+
+.list-item-boxCrossed-success {
+  position: relative;
+  color: black;
+  color: #28a745;
+}
+.list-item-boxCrossed-success::before {
+  left: -20px;
+  top: -2px;
+  content: "⛝";
+}
+
+.list-item-boxCrossed-danger {
+  position: relative;
+  color: black;
+  color: #dc3545;
+}
+.list-item-boxCrossed-danger::before {
+  left: -20px;
+  top: -2px;
+  content: "⛝";
+}
+
 h1 {
   color: #007bff;
+}
+
+.options {
+  border: 2px solid purple;
 }
 
 /*# sourceMappingURL=main.css.map */
