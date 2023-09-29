@@ -11,8 +11,99 @@
       <div class="flex-container-col-centered g-m">
         <h1>Template for the CSS</h1>
         <h2>Options for Buttons</h2>
-        <button class="btn-secondary-l">btn1</button>
+        <label for="btn-text">Type Somthing</label>
+        <input name="btn-text" type="text" id="btnText" value="Sample" />
+        <button id="sampleBtn" class="btn-primary-m">Sample</button>
+        <div>
+          <!-- Color Selection -->
+          <div>
+            <p>Select Color:</p>
+            <label>
+              <input class="btn-color" type="radio" name="color" value="none" />
+              None
+            </label>
+            <label>
+              <input
+                class="btn-color"
+                type="radio"
+                name="color"
+                value="primary"
+                checked
+              />
+              Primary
+            </label>
+            <label>
+              <input
+                class="btn-color"
+                type="radio"
+                name="color"
+                value="secondary"
+              />
+              Secondary
+            </label>
+            <label>
+              <input
+                class="btn-color"
+                type="radio"
+                name="color"
+                value="success"
+              />
+              Success
+            </label>
+            <label>
+              <input
+                class="btn-color"
+                type="radio"
+                name="color"
+                value="warning"
+              />
+              Warning
+            </label>
+            <label>
+              <input
+                class="btn-color"
+                type="radio"
+                name="color"
+                value="danger"
+              />
+              Danger
+            </label>
+          </div>
+
+          <!-- Size Selection -->
+          <div>
+            <p>Select Size:</p>
+            <label>
+              <input class="btn-size" type="radio" name="size" value="none" />
+              None
+            </label>
+            <label>
+              <input class="btn-size" type="radio" name="size" value="s" />
+              Small (60px)
+            </label>
+            <label>
+              <input
+                class="btn-size"
+                type="radio"
+                name="size"
+                value="m"
+                checked
+              />
+              Medium (100px)
+            </label>
+            <label>
+              <input class="btn-size" type="radio" name="size" value="l" />
+              Large (200px)
+            </label>
+          </div>
+          <div>
+            <p>Output:</p>
+            <input type="text" id="generatedBtnClass" value="btn" readonly />
+            <button id="btnCopyButton" onclick="copyText()">Copy</button>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
