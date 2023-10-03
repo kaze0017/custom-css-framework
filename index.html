@@ -7,17 +7,66 @@
     <title>Custom CSS Framework</title>
   </head>
   <body>
-    <div class="wrapper">
+    <!-- Wrapper -->
+    <div class="wrapper-xl border-2">
+      <div class="flex-container-col-centered">
+        <h1 class="h1">Wrapper</h1>
+        <p class="h4">
+          Wrapper limiths the with of the elemrnt and adds margins to the left
+          and right of the element
+        </p>
+        <h2 class="h3">Select the max-width of the wrapper:</h2>
+        <div class="options h4" id="wrapperOptions"></div>
+      </div>
+    </div>
+    <!-- End of Wrapper -->
+
+    <!-- Margins And Padding -->
+    <div class="wrapper-xl border-2">
+      <div class="flex-container-col-centered">
+        <h1 class="h1">Margins And Paddings</h1>
+        <p class="h3">You can chose the padding and margins</p>
+        <div class="options h4" id="multiClasses">
+          <div id="fontSizeOptions">Select Font Size</div>
+          <div id="fontWeightOptions">Select Font weight</div>
+          <div id="fontColorOptions">Select Font color</div>
+          <div id="bgColorOptions">Select Background Color</div>
+          <div id="marginOptions">Select Margin</div>
+          <div id="paddingOptions">Select Padding</div>
+          <div id="borderOptions">Select Border</div>
+        </div>
+        <div class="madding-magrin-sample">
+          <div class="box-out">
+            <p class="border-1 m-1" id="sampleText">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+              incidunt eaque? Aliquam voluptatem tenetur voluptas, nihil
+              quisquam explicabo laboriosam totam laborum quis fuga atque,
+              perferendis vel tempora harum consequatur doloremque sequi, saepe
+              autem veritatis. A aperiam optio assumenda, excepturi cumque
+              exercitationem dolorum iure esse inventore? Repudiandae minima
+              quae recusandae esse at quod saepe nesciunt voluptate itaque hic
+              facere suscipit labore, similique doloribus excepturi omnis ipsa!
+              Exercitationem magnam officiis alias corporis maiores amet vero
+              quae quia corrupti quasi eveniet numquam molestiae suscipit iure
+              quos quidem unde, obcaecati sed deleniti maxime. Eaque cumque, ex
+              voluptate saepe iste deserunt itaque praesentium repudiandae quas!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons -->
+    <div class="wrapper-xl border-2">
       <div class="options flex-container-col-centered g-m">
-        <h1>Template for the CSS</h1>
-        <h2>Options for Buttons</h2>
-        <label for="btn-text">Type Somthing</label>
+        <h1 class="h1">Template for the CSS</h1>
+        <h2 class="h2">Options for Buttons</h2>
+        <label class="h3" for="btn-text">Type Somthing</label>
         <input name="btn-text" type="text" id="btnText" value="Sample" />
-        <button id="sampleBtn" class="btn-primary-m">Sample</button>
+        <button id="sampleBtn" class="btn-primary-m h3">Sample</button>
         <div>
           <!-- Color Selection -->
           <div>
-            <p>Select Color:</p>
+            <p class="h3">Select Color:</p>
             <label>
               <input class="btn-color" type="radio" name="color" value="none" />
               None
@@ -72,7 +121,7 @@
 
           <!-- Size Selection -->
           <div>
-            <p>Select Size:</p>
+            <p class="h3">Select Size:</p>
             <label>
               <input class="btn-size" type="radio" name="size" value="none" />
               None
@@ -98,7 +147,6 @@
           </div>
         </div>
         <div>
-          <p>Output:</p>
           <input type="text" id="generatedBtnClass" value="btn" readonly />
           <button id="btnCopyButton">Copy</button>
         </div>
@@ -106,15 +154,18 @@
     </div>
 
     <!-- List ------------------- -->
-    <div class="wrapper lists">
-      <div class="options flex-container-col-centered g-m">
+    <div class="wrapper-xl border-2">
+      <div class="options flex-container-col-centered">
+        <h1 class="h1">Template for Lists</h1>
         <ul>
-          <li id="sampleLi" class="list-item-boxChecked-success">List Item</li>
+          <li id="sampleLi" class="list-item-boxChecked-success h3">
+            List Item
+          </li>
         </ul>
 
         <!-- Color Selection -->
         <div>
-          <p>Select Color:</p>
+          <p class="h3">Select Color:</p>
           <label>
             <input class="li-color" type="radio" name="li-color" value="none" />
             None
@@ -142,7 +193,7 @@
 
         <!-- Style Selection -->
         <div>
-          <p>Select Style:</p>
+          <p class="h3">Select Style:</p>
           <label>
             <input class="li-style" type="radio" name="style" value="none" />
             None
@@ -180,7 +231,6 @@
           </label>
         </div>
         <div>
-          <p>Output:</p>
           <input
             type="text"
             id="generatedLiClass"
@@ -191,6 +241,75 @@
         </div>
       </div>
     </div>
-    <script src="./src/js/main.js"></script>
+
+    <!-- Grids -->
+    <div class="wrapper-xl border-2">
+      <div class="flex-container-col-centered">
+        <h1 class="h1">Grids</h1>
+        <p class="h3">You can chose the number of columns and the gaps</p>
+        <!-- Number of Coloms -->
+        <div>
+          <p class="h3">Select number of column:</p>
+          <div class="options" id="colsCountOptions">
+            <!-- inputs from js -->
+          </div>
+        </div>
+
+        <!-- Size Row Gaps -->
+        <div>
+          <p class="h3">Select Row Gaps:</p>
+          <div class="options" id="rowGapOptions">
+            <!-- inputs from js -->
+          </div>
+        </div>
+        <!-- Size Eqal -->
+        <div>
+          <p class="h3">Select Col Gaps:</p>
+          <div class="options" id="colGapOptions">
+            <!-- inputs from js -->
+          </div>
+        </div>
+
+        <!-- Out Put -->
+        <div>
+          <input type="text" id="generatedGtidClass" value="grid" readonly />
+          <button id="gridCopyButton">Copy</button>
+        </div>
+      </div>
+
+      <div class="grid-cols-3-l" id="sampleGrid">
+        <div>
+          <h1 class="h2">Heading 1</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, hic!
+          </p>
+        </div>
+        <div>
+          <h1 class="h2">Heading 2</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            quis nobis molestias ut impedit necessitatibus accusantium, minima
+            et maiores recusandae, obcaecati est fugiat officiis a laborum. Odit
+            repudiandae quisquam veniam, quia expedita id itaque dolores dolore,
+            porro fugit ab error.
+          </p>
+        </div>
+        <div>
+          <h1 class="h2">Heading 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam
+            quaerat explicabo quisquam perspiciatis eveniet cum facere odit, sit
+            nulla doloribus architecto ea? Eos culpa omnis odit provident
+            architecto atque facilis iste voluptatum et, placeat quasi error
+            tempora nulla maxime distinctio beatae ea, expedita temporibus alias
+            reiciendis earum labore. Iure sed eveniet, exercitationem
+            consequuntur nihil ratione error numquam commodi pariatur?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/js/CreateOptions.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

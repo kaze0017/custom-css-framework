@@ -133,10 +133,24 @@ table {
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 100%;
+.wrapper-sm {
+  max-width: 576px;
+  margin: 10px auto;
+}
+
+.wrapper-md {
+  max-width: 768px;
+  margin: 10px auto;
+}
+
+.wrapper-lg {
+  max-width: 992px;
+  margin: 10px auto;
+}
+
+.wrapper-xl {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .container-centered {
@@ -148,10 +162,175 @@ table {
   align-content: center;
 }
 
+.font-size-1 {
+  font-size: 1rem;
+}
+
+.font-size-2 {
+  font-size: 2rem;
+}
+
+.font-size-3 {
+  font-size: 3rem;
+}
+
+.font-size-4 {
+  font-size: 4rem;
+}
+
+.font-color-primary {
+  color: #007bff;
+}
+
+.font-color-secondary {
+  color: #6c757d;
+}
+
+.font-color-success {
+  color: #28a745;
+}
+
+.font-color-warning {
+  color: #ffc107;
+}
+
+.font-color-danger {
+  color: #dc3545;
+}
+
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.bg-color-primary {
+  background-color: #007bff;
+}
+
+.bg-color-secondary {
+  background-color: #6c757d;
+}
+
+.bg-color-success {
+  background-color: #28a745;
+}
+
+.bg-color-warning {
+  background-color: #ffc107;
+}
+
+.bg-color-danger {
+  background-color: #dc3545;
+}
+
+.m-1 {
+  margin: 16px 16px 16px 16px;
+}
+
+.m-2 {
+  margin: 32px 32px 32px 32px;
+}
+
+.m-3 {
+  margin: 48px 48px 48px 48px;
+}
+
+.m-4 {
+  margin: 64px 64px 64px 64px;
+}
+
+.m-5 {
+  margin: 80px 80px 80px 80px;
+}
+
+.m-6 {
+  margin: 96px 96px 96px 96px;
+}
+
+.p-1 {
+  padding: 16px;
+}
+
+.p-2 {
+  padding: 32px;
+}
+
+.p-3 {
+  padding: 48px;
+}
+
+.p-4 {
+  padding: 64px;
+}
+
+.p-5 {
+  padding: 80px;
+}
+
+.p-6 {
+  padding: 96px;
+}
+
+.border-1 {
+  border: 1px solid black;
+}
+
+.border-2 {
+  border: 2px solid black;
+}
+
+.border-3 {
+  border: 3px solid black;
+}
+
+.border-4 {
+  border: 4px solid black;
+}
+
+.border-5 {
+  border: 5px solid black;
+}
+
+.border-6 {
+  border: 6px solid black;
+}
+
 .flex-container, .flex-container-row-centered, .flex-container-col-centered {
   width: 100%;
   padding: 10px;
   display: flex;
+  row-gap: 20px;
 }
 
 .flex-container-col-centered {
@@ -166,25 +345,464 @@ table {
   justify-content: center;
 }
 
-.g-s {
-  margin: -5px;
-}
-.g-s > * {
-  margin: 5px;
+.grid, .grid-cols-6-l-l, .grid-cols-6-l-m, .grid-cols-6-l-s, .grid-cols-6-l, .grid-cols-6-m-l, .grid-cols-6-m-m, .grid-cols-6-m-s, .grid-cols-6-m, .grid-cols-6-s-l, .grid-cols-6-s-m, .grid-cols-6-s-s, .grid-cols-6-s, .grid-cols-6-n-l, .grid-cols-6-n-m, .grid-cols-6-n-s, .grid-cols-6, .grid-cols-5-l-l, .grid-cols-5-l-m, .grid-cols-5-l-s, .grid-cols-5-l, .grid-cols-5-m-l, .grid-cols-5-m-m, .grid-cols-5-m-s, .grid-cols-5-m, .grid-cols-5-s-l, .grid-cols-5-s-m, .grid-cols-5-s-s, .grid-cols-5-s, .grid-cols-5-n-l, .grid-cols-5-n-m, .grid-cols-5-n-s, .grid-cols-5, .grid-cols-4-l-l, .grid-cols-4-l-m, .grid-cols-4-l-s, .grid-cols-4-l, .grid-cols-4-m-l, .grid-cols-4-m-m, .grid-cols-4-m-s, .grid-cols-4-m, .grid-cols-4-s-l, .grid-cols-4-s-m, .grid-cols-4-s-s, .grid-cols-4-s, .grid-cols-4-n-l, .grid-cols-4-n-m, .grid-cols-4-n-s, .grid-cols-4, .grid-cols-3-l-l, .grid-cols-3-l-m, .grid-cols-3-l-s, .grid-cols-3-l, .grid-cols-3-m-l, .grid-cols-3-m-m, .grid-cols-3-m-s, .grid-cols-3-m, .grid-cols-3-s-l, .grid-cols-3-s-m, .grid-cols-3-s-s, .grid-cols-3-s, .grid-cols-3-n-l, .grid-cols-3-n-m, .grid-cols-3-n-s, .grid-cols-3, .grid-cols-2-l-l, .grid-cols-2-l-m, .grid-cols-2-l-s, .grid-cols-2-l, .grid-cols-2-m-l, .grid-cols-2-m-m, .grid-cols-2-m-s, .grid-cols-2-m, .grid-cols-2-s-l, .grid-cols-2-s-m, .grid-cols-2-s-s, .grid-cols-2-s, .grid-cols-2-n-l, .grid-cols-2-n-m, .grid-cols-2-n-s, .grid-cols-2, .grid-cols-1-l-l, .grid-cols-1-l-m, .grid-cols-1-l-s, .grid-cols-1-l, .grid-cols-1-m-l, .grid-cols-1-m-m, .grid-cols-1-m-s, .grid-cols-1-m, .grid-cols-1-s-l, .grid-cols-1-s-m, .grid-cols-1-s-s, .grid-cols-1-s, .grid-cols-1-n-l, .grid-cols-1-n-m, .grid-cols-1-n-s, .grid-cols-1 {
+  display: grid;
 }
 
-.g-m {
-  margin: -10px;
-}
-.g-m > * {
-  margin: 10px;
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
 }
 
-.g-l {
-  margin: -15px;
+.grid-cols-1-n-s {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0 8px;
 }
-.g-l > * {
-  margin: 15px;
+
+.grid-cols-1-n-m {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0 16px;
+}
+
+.grid-cols-1-n-l {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0 32px;
+}
+
+.grid-cols-1-s {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-1-s-s {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px 8px;
+}
+
+.grid-cols-1-s-m {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px 16px;
+}
+
+.grid-cols-1-s-l {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px 32px;
+}
+
+.grid-cols-1-m {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-1-m-s {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px 8px;
+}
+
+.grid-cols-1-m-m {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px 16px;
+}
+
+.grid-cols-1-m-l {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px 32px;
+}
+
+.grid-cols-1-l {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-1-l-s {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px 8px;
+}
+
+.grid-cols-1-l-m {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px 16px;
+}
+
+.grid-cols-1-l-l {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px 32px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-2-n-s {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 8px;
+}
+
+.grid-cols-2-n-m {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 16px;
+}
+
+.grid-cols-2-n-l {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 32px;
+}
+
+.grid-cols-2-s {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-2-s-s {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 8px;
+}
+
+.grid-cols-2-s-m {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 16px;
+}
+
+.grid-cols-2-s-l {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 32px;
+}
+
+.grid-cols-2-m {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-2-m-s {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 8px;
+}
+
+.grid-cols-2-m-m {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 16px;
+}
+
+.grid-cols-2-m-l {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 32px;
+}
+
+.grid-cols-2-l {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-2-l-s {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 8px;
+}
+
+.grid-cols-2-l-m {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 16px;
+}
+
+.grid-cols-2-l-l {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 32px;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-3-n-s {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 8px;
+}
+
+.grid-cols-3-n-m {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 16px;
+}
+
+.grid-cols-3-n-l {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 32px;
+}
+
+.grid-cols-3-s {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-3-s-s {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 8px;
+}
+
+.grid-cols-3-s-m {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 16px;
+}
+
+.grid-cols-3-s-l {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 32px;
+}
+
+.grid-cols-3-m {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-3-m-s {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 8px;
+}
+
+.grid-cols-3-m-m {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 16px;
+}
+
+.grid-cols-3-m-l {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 32px;
+}
+
+.grid-cols-3-l {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-3-l-s {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 8px;
+}
+
+.grid-cols-3-l-m {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 16px;
+}
+
+.grid-cols-3-l-l {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 32px;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-4-n-s {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 8px;
+}
+
+.grid-cols-4-n-m {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 16px;
+}
+
+.grid-cols-4-n-l {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 32px;
+}
+
+.grid-cols-4-s {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-4-s-s {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 8px;
+}
+
+.grid-cols-4-s-m {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 16px;
+}
+
+.grid-cols-4-s-l {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 32px;
+}
+
+.grid-cols-4-m {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-4-m-s {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 8px;
+}
+
+.grid-cols-4-m-m {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 16px;
+}
+
+.grid-cols-4-m-l {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px 32px;
+}
+
+.grid-cols-4-l {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-4-l-s {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 8px;
+}
+
+.grid-cols-4-l-m {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 16px;
+}
+
+.grid-cols-4-l-l {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 32px;
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-5-n-s {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0 8px;
+}
+
+.grid-cols-5-n-m {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0 16px;
+}
+
+.grid-cols-5-n-l {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0 32px;
+}
+
+.grid-cols-5-s {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-5-s-s {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px 8px;
+}
+
+.grid-cols-5-s-m {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px 16px;
+}
+
+.grid-cols-5-s-l {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px 32px;
+}
+
+.grid-cols-5-m {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-5-m-s {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px 8px;
+}
+
+.grid-cols-5-m-m {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px 16px;
+}
+
+.grid-cols-5-m-l {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px 32px;
+}
+
+.grid-cols-5-l {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-5-l-s {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px 8px;
+}
+
+.grid-cols-5-l-m {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px 16px;
+}
+
+.grid-cols-5-l-l {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px 32px;
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-cols-6-n-s {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 8px;
+}
+
+.grid-cols-6-n-m {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 16px;
+}
+
+.grid-cols-6-n-l {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0 32px;
+}
+
+.grid-cols-6-s {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-cols-6-s-s {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px 8px;
+}
+
+.grid-cols-6-s-m {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px 16px;
+}
+
+.grid-cols-6-s-l {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px 32px;
+}
+
+.grid-cols-6-m {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-cols-6-m-s {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px 8px;
+}
+
+.grid-cols-6-m-m {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px 16px;
+}
+
+.grid-cols-6-m-l {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px 32px;
+}
+
+.grid-cols-6-l {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-cols-6-l-s {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px 8px;
+}
+
+.grid-cols-6-l-m {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px 16px;
+}
+
+.grid-cols-6-l-l {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 32px 32px;
 }
 
 .btn, .btn-danger, .btn-danger-l, .btn-danger-m, .btn-danger-s, .btn-warning, .btn-warning-l, .btn-warning-m, .btn-warning-s, .btn-success, .btn-success-l, .btn-success-m, .btn-success-s, .btn-secondary, .btn-secondary-l, .btn-secondary-m, .btn-secondary-s, .btn-primary, .btn-primary-l, .btn-primary-m, .btn-primary-s {
@@ -412,12 +1030,33 @@ ul {
   content: "⛝";
 }
 
+.h1 {
+  font-size: 32px;
+}
+
+.h2 {
+  font-size: 28.8px;
+}
+
+.h3 {
+  font-size: 25.6px;
+}
+
+.h4 {
+  font-size: 22.4px;
+}
+
+.h5 {
+  font-size: 19.2px;
+}
+
 h1 {
   color: #007bff;
 }
 
-.options {
-  border: 2px solid purple;
+.box-out {
+  width: 700px;
+  background-color: aqua;
 }
 
 /*# sourceMappingURL=main.css.map */
