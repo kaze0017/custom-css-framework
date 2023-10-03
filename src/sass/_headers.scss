@@ -1,0 +1,12 @@
+$header-sizes: (
+  1: $heading-font-size,
+  2: $heading-font-size * 0.9,
+  3: $heading-font-size * 0.8,
+  4: $heading-font-size * 0.7,
+  5: $heading-font-size * 0.6,
+);
+@each $size, $value in $header-sizes {
+  .h#{$size} {
+    font-size: $value;
+  }
+}

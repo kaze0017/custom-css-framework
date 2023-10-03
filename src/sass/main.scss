@@ -2,13 +2,22 @@
 
 @import "variables";
 @import "utilities";
+
 @import "buttons";
 @import "lists";
+@import "headers";
+@import "inputs";
 
 h1 {
   color: $primary-color;
 }
 
 .options {
-  border: 2px solid purple;
+  // border: 2px solid purple;
+}
+
+.box-out {
+  width: 700px;
+  // min-height: 200px;
+  background-color: aqua;
 }

@@ -2,12 +2,23 @@
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+$breakPoints: (
+  sm: $sm-breakpoint,
+  md: $md-breakpoint,
+  lg: $lg-breakpoint,
+  xl: $xl-breakpoint,
+);
 
+@each $breakPoint, $value in $breakPoints {
+  .wrapper-#{$breakPoint} {
+    max-width: $value;
+    margin: 10px auto;
+  }
+}
 .container-centered {
   width: 100%;
   padding: 10px;
@@ -17,16 +28,120 @@
   align-content: center;
 }
 
-// Define gap sizes
-$gap-s: 10px;
-$gap-m: 20px;
-$gap-l: 30px;
+// Colors******************************************************
+
+// Font colors - size - weight
+
+$font-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: $warning-color,
+  danger: $danger-color,
+);
+
+$fonts-sizes: (
+  1: 1rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem,
+);
+
+$font-weights: (
+  100: 100,
+  200: 200,
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900,
+);
+
+@each $size, $value in $fonts-sizes {
+  .font-size-#{$size} {
+    font-size: $value;
+  }
+}
+
+@each $color, $value in $font-colors {
+  .font-color-#{$color} {
+    color: $value;
+  }
+}
+
+@each $weight, $value in $font-weights {
+  .font-weight-#{$weight} {
+    font-weight: $value;
+  }
+}
+
+// Background colors
+
+$bg-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: $warning-color,
+  danger: $danger-color,
+);
+
+@each $color, $value in $bg-colors {
+  .bg-color-#{$color} {
+    background-color: $value;
+  }
+}
+
+// Spacing******************************************************
+
+// Define spacing unit
+$sapces: (
+  1: $spacing-unit,
+  2: $spacing-unit * 2,
+  3: $spacing-unit * 3,
+  4: $spacing-unit * 4,
+  5: $spacing-unit * 5,
+  6: $spacing-unit * 6,
+);
+
+@each $space, $value in $sapces {
+  .m-#{$space} {
+    margin: $value $value $value $value;
+  }
+}
+
+@each $space, $value in $sapces {
+  .p-#{$space} {
+    padding: $value;
+  }
+}
+
+// Border******************************************************
+
+$border-widths: (
+  1: $border-width,
+  2: $border-width * 2,
+  3: $border-width * 3,
+  4: $border-width * 4,
+  5: $border-width * 5,
+  6: $border-width * 6,
+);
+
+@each $width, $value in $border-widths {
+  .border-#{$width} {
+    border: $value solid black;
+  }
+}
+
+// Flex Container Classes ****************************************
 
 // Base flex container styles
 .flex-container {
   width: 100%;
   padding: 10px;
   display: flex;
+  row-gap: 20px;
 }
 
 // Flex container with column centering
@@ -45,24 +160,105 @@ $gap-l: 30px;
   justify-content: center;
 }
 
-// Gap classes
-.g-s {
-  margin: #{$gap-s / 2 * -1};
-  & > * {
-    margin: #{$gap-s / 2};
-  }
+// Grid Container Classes ****************************************
+.grid {
+  display: grid;
 }
 
-.g-m {
-  margin: #{$gap-m / 2 * -1};
-  & > * {
-    margin: #{$gap-m / 2};
-  }
-}
+$cols: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+);
+$gaps: (
+  none: 0,
+  s: $spacing-unit / 2,
+  m: $spacing-unit,
+  l: $spacing-unit * 2,
+);
 
-.g-l {
-  margin: #{$gap-l / 2 * -1};
-  & > * {
-    margin: #{$gap-l / 2};
+// Expandables for streaching grid items
+$equals: (
+  none: "",
+);
+
+@each $col-count, $col-value in $cols {
+  @each $row-gap-key, $row-gap-value in $gaps {
+    @if ($row-gap-key != "none") {
+      @each $col-gap-key, $col-gap-value in $gaps {
+        @if ($col-gap-key!= "none") {
+          @each $equal-key, $equal-value in $equals {
+            @if ($equal-key != "none") {
+              .grid-cols-#{$col-count}-#{$row-gap-key}-#{$col-gap-key}-#{$equal-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+                gap: #{$row-gap-value} #{$col-gap-value};
+                align-items: #{$equal-value};
+              }
+            } @else {
+              .grid-cols-#{$col-count}-#{$row-gap-key}-#{$col-gap-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+                gap: #{$row-gap-value} #{$col-gap-value};
+              }
+            }
+          }
+        } @else {
+          @each $equal-key, $equal-value in $equals {
+            @if ($equal-key != "none") {
+              .grid-cols-#{$col-count}-#{$row-gap-key}-#{$equal-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+                align-items: #{$equal-value};
+              }
+            } @else {
+              .grid-cols-#{$col-count}-#{$row-gap-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+              }
+            }
+          }
+        }
+      }
+    } @else {
+      @each $col-gap-key, $col-gap-value in $gaps {
+        @if ($col-gap-key!= "none") {
+          @each $equal-key, $equal-value in $equals {
+            @if ($equal-key != "none") {
+              .grid-cols-#{$col-count}-n-#{$col-gap-key}-#{$equal-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+                gap: #{$row-gap-value} #{$col-gap-value};
+                align-items: #{$equal-value};
+              }
+            } @else {
+              .grid-cols-#{$col-count}-n-#{$col-gap-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+                gap: #{$row-gap-value} #{$col-gap-value};
+              }
+            }
+          }
+        } @else {
+          @each $equal-key, $equal-value in $equals {
+            @if ($equal-key != "none") {
+              .grid-cols-#{$col-count}-#{$equal-key} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+                align-items: #{$equal-value};
+              }
+            } @else {
+              .grid-cols-#{$col-count} {
+                @extend .grid;
+                grid-template-columns: repeat(#{$col-value}, 1fr);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
