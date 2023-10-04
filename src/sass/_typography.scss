@@ -1,0 +1,67 @@
+// _typography.scss
+
+// Font Families
+$body-font-family: Arial, sans-serif;
+$heading-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Sizes
+$base-font-size: 16px;
+$heading1-font-size: 2em;
+$heading2-font-size: 1.5em;
+$heading3-font-size: 1.2em;
+$small-font-size: 0.8em;
+
+// Line Heights
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Font Weights
+$normal-font-weight: normal;
+$bold-font-weight: bold;
+
+// Text Colors
+$text-color: #333;
+
+// Typography Styles
+body {
+  font-family: $body-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $text-color;
+}
+
+h1 {
+  font-family: $heading-font-family;
+  font-size: $heading1-font-size;
+  font-weight: $bold-font-weight;
+  line-height: $heading-line-height;
+  color: $text-color;
+}
+
+h2 {
+  font-family: $heading-font-family;
+  font-size: $heading2-font-size;
+  font-weight: $bold-font-weight;
+  line-height: $heading-line-height;
+  color: $text-color;
+}
+
+h3 {
+  font-family: $heading-font-family;
+  font-size: $heading3-font-size;
+  font-weight: $bold-font-weight;
+  line-height: $heading-line-height;
+  color: $text-color;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
