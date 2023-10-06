@@ -1,3 +1,52 @@
+.input {
+    padding: 1cm;
+    border: 5px solid black;
+    font-size: 50px;
+  }
+  
+  $input-sizes: (
+    s: 50px,
+    m: 100px,
+    l: 200px,
+  );
+  
+  $input-colors: (
+    primary: $primary-color,
+    secondary: $secondary-color,
+    success: $success-color,
+    warning: $warning-color,
+    danger: $danger-color,
+  );
+  
+  // Create utility classes for button sizes
+  @each $size, $width in $input-sizes {
+    .#{$size} {
+      width: $width;
+    }
+  }
+  
+  // Create utility classes for button colors
+  @each $color, $bg-color in $input-colors {
+    .btn-#{$color} {
+      @extend .btn;
+      background-color: $bg-color;
+    }
+  }
+  
+  // Create utility classes for button sizes and colors
+  @each $size, $width in $input-sizes {
+    @each $color, $bg-color in $input-colors {
+      .btn-#{$color}-#{$size} {
+        @extend .btn-#{$color};
+        @extend .#{$size};
+      }
+    }
+  }
+  
+
+
+
+
 input{
    border: 1px solid red;
 }
@@ -11,6 +60,10 @@ input-warning{
 }
 
 input-l{
+    width: 200px;
+}
+
+input-m{
     width: 100px;
 }
 
@@ -23,4 +76,5 @@ input-primary-l{
     width: 100px;
 }
 
-// do input small, medium, mix it all up do a variety
+// do input small, medium, mix it all up do a variety 
+// borders, margins, colours, padding, font size, font weight
