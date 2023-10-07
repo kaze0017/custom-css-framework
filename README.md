@@ -1,5 +1,17 @@
 # custom-css-framework
 
+## Index.html
+
+The index.html presents visual examples of possible classes to used and allows you to copy the classes You need. Try it!!!
+
+## How to Install
+
+To use this framework you can add the ./dist/css/main.css or ./dist/css/main.css.map as your linh for stylesheet
+
+## How to Customize
+
+You Can customize this framework by changing the variables in ./src/sass/\_variables.scss
+
 ## Variables
 
 ### Colors
@@ -56,6 +68,8 @@ spacing-unit:16px
 
 ### Grid
 
+gaps are based on $spacing-unit (default 16px)
+
 - grid-[number of collumns: 1 | 2 | 3 | 4 | 5 | 6]
   Example: grid-3
 - grid-[number of collumns]-[Row gap: '': none | s | m | l]
@@ -73,3 +87,22 @@ spacing-unit:16px
 - btn-[color]-[width]
 
 ### Lists
+
+- lists-item :Basic list item
+- list-item-[color : primary | secondary]
+- list-item-[style : disk | square | box | boxChecked | boxCrossed]
+- list-item-[color]-[style]
+
+### Heading
+
+- header : Basic Header
+- header-[color: primary | secondary | success | danger | warning]
+- header-[size: 1 | 2 | 3 | 4 | 5]
+- header-[size]-[Color]
+
+### Inputs
+
+- input : Basic input
+- input-[color: primary | secondary | success | danger | warning]
+- input-[width: s | m | l | xl]
+- input-[color]-[width]

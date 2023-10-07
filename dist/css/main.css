@@ -355,17 +355,17 @@ table {
 
 .grid-cols-1-n-s {
   grid-template-columns: repeat(1, 1fr);
-  gap: 0 8px;
+  gap: 0 16px;
 }
 
 .grid-cols-1-n-m {
   grid-template-columns: repeat(1, 1fr);
-  gap: 0 16px;
+  gap: 0 32px;
 }
 
 .grid-cols-1-n-l {
   grid-template-columns: repeat(1, 1fr);
-  gap: 0 32px;
+  gap: 0 64px;
 }
 
 .grid-cols-1-s {
@@ -374,17 +374,17 @@ table {
 
 .grid-cols-1-s-s {
   grid-template-columns: repeat(1, 1fr);
-  gap: 8px 8px;
+  gap: 16px 16px;
 }
 
 .grid-cols-1-s-m {
   grid-template-columns: repeat(1, 1fr);
-  gap: 8px 16px;
+  gap: 16px 32px;
 }
 
 .grid-cols-1-s-l {
   grid-template-columns: repeat(1, 1fr);
-  gap: 8px 32px;
+  gap: 16px 64px;
 }
 
 .grid-cols-1-m {
@@ -393,17 +393,17 @@ table {
 
 .grid-cols-1-m-s {
   grid-template-columns: repeat(1, 1fr);
-  gap: 16px 8px;
+  gap: 32px 16px;
 }
 
 .grid-cols-1-m-m {
   grid-template-columns: repeat(1, 1fr);
-  gap: 16px 16px;
+  gap: 32px 32px;
 }
 
 .grid-cols-1-m-l {
   grid-template-columns: repeat(1, 1fr);
-  gap: 16px 32px;
+  gap: 32px 64px;
 }
 
 .grid-cols-1-l {
@@ -412,17 +412,17 @@ table {
 
 .grid-cols-1-l-s {
   grid-template-columns: repeat(1, 1fr);
-  gap: 32px 8px;
+  gap: 64px 16px;
 }
 
 .grid-cols-1-l-m {
   grid-template-columns: repeat(1, 1fr);
-  gap: 32px 16px;
+  gap: 64px 32px;
 }
 
 .grid-cols-1-l-l {
   grid-template-columns: repeat(1, 1fr);
-  gap: 32px 32px;
+  gap: 64px 64px;
 }
 
 .grid-cols-2 {
@@ -431,17 +431,17 @@ table {
 
 .grid-cols-2-n-s {
   grid-template-columns: repeat(2, 1fr);
-  gap: 0 8px;
+  gap: 0 16px;
 }
 
 .grid-cols-2-n-m {
   grid-template-columns: repeat(2, 1fr);
-  gap: 0 16px;
+  gap: 0 32px;
 }
 
 .grid-cols-2-n-l {
   grid-template-columns: repeat(2, 1fr);
-  gap: 0 32px;
+  gap: 0 64px;
 }
 
 .grid-cols-2-s {
@@ -450,17 +450,17 @@ table {
 
 .grid-cols-2-s-s {
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px 8px;
+  gap: 16px 16px;
 }
 
 .grid-cols-2-s-m {
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px 16px;
+  gap: 16px 32px;
 }
 
 .grid-cols-2-s-l {
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px 32px;
+  gap: 16px 64px;
 }
 
 .grid-cols-2-m {
@@ -469,17 +469,17 @@ table {
 
 .grid-cols-2-m-s {
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px 8px;
+  gap: 32px 16px;
 }
 
 .grid-cols-2-m-m {
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px 16px;
+  gap: 32px 32px;
 }
 
 .grid-cols-2-m-l {
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px 32px;
+  gap: 32px 64px;
 }
 
 .grid-cols-2-l {
@@ -488,17 +488,17 @@ table {
 
 .grid-cols-2-l-s {
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 8px;
+  gap: 64px 16px;
 }
 
 .grid-cols-2-l-m {
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 16px;
+  gap: 64px 32px;
 }
 
 .grid-cols-2-l-l {
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 32px;
+  gap: 64px 64px;
 }
 
 .grid-cols-3 {
@@ -507,17 +507,17 @@ table {
 
 .grid-cols-3-n-s {
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 8px;
+  gap: 0 16px;
 }
 
 .grid-cols-3-n-m {
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 16px;
+  gap: 0 32px;
 }
 
 .grid-cols-3-n-l {
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 32px;
+  gap: 0 64px;
 }
 
 .grid-cols-3-s {
@@ -526,17 +526,17 @@ table {
 
 .grid-cols-3-s-s {
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px 8px;
+  gap: 16px 16px;
 }
 
 .grid-cols-3-s-m {
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px 16px;
+  gap: 16px 32px;
 }
 
 .grid-cols-3-s-l {
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px 32px;
+  gap: 16px 64px;
 }
 
 .grid-cols-3-m {
@@ -545,17 +545,17 @@ table {
 
 .grid-cols-3-m-s {
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px 8px;
+  gap: 32px 16px;
 }
 
 .grid-cols-3-m-m {
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px 16px;
+  gap: 32px 32px;
 }
 
 .grid-cols-3-m-l {
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px 32px;
+  gap: 32px 64px;
 }
 
 .grid-cols-3-l {
@@ -564,17 +564,17 @@ table {
 
 .grid-cols-3-l-s {
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px 8px;
+  gap: 64px 16px;
 }
 
 .grid-cols-3-l-m {
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px 16px;
+  gap: 64px 32px;
 }
 
 .grid-cols-3-l-l {
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px 32px;
+  gap: 64px 64px;
 }
 
 .grid-cols-4 {
@@ -583,17 +583,17 @@ table {
 
 .grid-cols-4-n-s {
   grid-template-columns: repeat(4, 1fr);
-  gap: 0 8px;
+  gap: 0 16px;
 }
 
 .grid-cols-4-n-m {
   grid-template-columns: repeat(4, 1fr);
-  gap: 0 16px;
+  gap: 0 32px;
 }
 
 .grid-cols-4-n-l {
   grid-template-columns: repeat(4, 1fr);
-  gap: 0 32px;
+  gap: 0 64px;
 }
 
 .grid-cols-4-s {
@@ -602,17 +602,17 @@ table {
 
 .grid-cols-4-s-s {
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px 8px;
+  gap: 16px 16px;
 }
 
 .grid-cols-4-s-m {
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px 16px;
+  gap: 16px 32px;
 }
 
 .grid-cols-4-s-l {
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px 32px;
+  gap: 16px 64px;
 }
 
 .grid-cols-4-m {
@@ -621,17 +621,17 @@ table {
 
 .grid-cols-4-m-s {
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px 8px;
+  gap: 32px 16px;
 }
 
 .grid-cols-4-m-m {
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px 16px;
+  gap: 32px 32px;
 }
 
 .grid-cols-4-m-l {
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px 32px;
+  gap: 32px 64px;
 }
 
 .grid-cols-4-l {
@@ -640,17 +640,17 @@ table {
 
 .grid-cols-4-l-s {
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px 8px;
+  gap: 64px 16px;
 }
 
 .grid-cols-4-l-m {
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px 16px;
+  gap: 64px 32px;
 }
 
 .grid-cols-4-l-l {
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px 32px;
+  gap: 64px 64px;
 }
 
 .grid-cols-5 {
@@ -659,17 +659,17 @@ table {
 
 .grid-cols-5-n-s {
   grid-template-columns: repeat(5, 1fr);
-  gap: 0 8px;
+  gap: 0 16px;
 }
 
 .grid-cols-5-n-m {
   grid-template-columns: repeat(5, 1fr);
-  gap: 0 16px;
+  gap: 0 32px;
 }
 
 .grid-cols-5-n-l {
   grid-template-columns: repeat(5, 1fr);
-  gap: 0 32px;
+  gap: 0 64px;
 }
 
 .grid-cols-5-s {
@@ -678,17 +678,17 @@ table {
 
 .grid-cols-5-s-s {
   grid-template-columns: repeat(5, 1fr);
-  gap: 8px 8px;
+  gap: 16px 16px;
 }
 
 .grid-cols-5-s-m {
   grid-template-columns: repeat(5, 1fr);
-  gap: 8px 16px;
+  gap: 16px 32px;
 }
 
 .grid-cols-5-s-l {
   grid-template-columns: repeat(5, 1fr);
-  gap: 8px 32px;
+  gap: 16px 64px;
 }
 
 .grid-cols-5-m {
@@ -697,17 +697,17 @@ table {
 
 .grid-cols-5-m-s {
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px 8px;
+  gap: 32px 16px;
 }
 
 .grid-cols-5-m-m {
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px 16px;
+  gap: 32px 32px;
 }
 
 .grid-cols-5-m-l {
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px 32px;
+  gap: 32px 64px;
 }
 
 .grid-cols-5-l {
@@ -716,17 +716,17 @@ table {
 
 .grid-cols-5-l-s {
   grid-template-columns: repeat(5, 1fr);
-  gap: 32px 8px;
+  gap: 64px 16px;
 }
 
 .grid-cols-5-l-m {
   grid-template-columns: repeat(5, 1fr);
-  gap: 32px 16px;
+  gap: 64px 32px;
 }
 
 .grid-cols-5-l-l {
   grid-template-columns: repeat(5, 1fr);
-  gap: 32px 32px;
+  gap: 64px 64px;
 }
 
 .grid-cols-6 {
@@ -735,17 +735,17 @@ table {
 
 .grid-cols-6-n-s {
   grid-template-columns: repeat(6, 1fr);
-  gap: 0 8px;
+  gap: 0 16px;
 }
 
 .grid-cols-6-n-m {
   grid-template-columns: repeat(6, 1fr);
-  gap: 0 16px;
+  gap: 0 32px;
 }
 
 .grid-cols-6-n-l {
   grid-template-columns: repeat(6, 1fr);
-  gap: 0 32px;
+  gap: 0 64px;
 }
 
 .grid-cols-6-s {
@@ -754,17 +754,17 @@ table {
 
 .grid-cols-6-s-s {
   grid-template-columns: repeat(6, 1fr);
-  gap: 8px 8px;
+  gap: 16px 16px;
 }
 
 .grid-cols-6-s-m {
   grid-template-columns: repeat(6, 1fr);
-  gap: 8px 16px;
+  gap: 16px 32px;
 }
 
 .grid-cols-6-s-l {
   grid-template-columns: repeat(6, 1fr);
-  gap: 8px 32px;
+  gap: 16px 64px;
 }
 
 .grid-cols-6-m {
@@ -773,17 +773,17 @@ table {
 
 .grid-cols-6-m-s {
   grid-template-columns: repeat(6, 1fr);
-  gap: 16px 8px;
+  gap: 32px 16px;
 }
 
 .grid-cols-6-m-m {
   grid-template-columns: repeat(6, 1fr);
-  gap: 16px 16px;
+  gap: 32px 32px;
 }
 
 .grid-cols-6-m-l {
   grid-template-columns: repeat(6, 1fr);
-  gap: 16px 32px;
+  gap: 32px 64px;
 }
 
 .grid-cols-6-l {
@@ -792,17 +792,17 @@ table {
 
 .grid-cols-6-l-s {
   grid-template-columns: repeat(6, 1fr);
-  gap: 32px 8px;
+  gap: 64px 16px;
 }
 
 .grid-cols-6-l-m {
   grid-template-columns: repeat(6, 1fr);
-  gap: 32px 16px;
+  gap: 64px 32px;
 }
 
 .grid-cols-6-l-l {
   grid-template-columns: repeat(6, 1fr);
-  gap: 32px 32px;
+  gap: 64px 64px;
 }
 
 .btn, .btn-danger, .btn-danger-l, .btn-danger-m, .btn-danger-s, .btn-warning, .btn-warning-l, .btn-warning-m, .btn-warning-s, .btn-success, .btn-success-l, .btn-success-m, .btn-success-s, .btn-secondary, .btn-secondary-l, .btn-secondary-m, .btn-secondary-s, .btn-primary, .btn-primary-l, .btn-primary-m, .btn-primary-s {
@@ -1030,33 +1030,91 @@ ul {
   content: "⛝";
 }
 
-.h1 {
+.header-primary, .header-5-primary, .header-4-primary, .header-3-primary, .header-2-primary, .header-1-primary {
+  color: #007bff;
+}
+
+.header-secondary, .header-5-secondary, .header-4-secondary, .header-3-secondary, .header-2-secondary, .header-1-secondary {
+  color: #6c757d;
+}
+
+.header-success, .header-5-success, .header-4-success, .header-3-success, .header-2-success, .header-1-success {
+  color: #28a745;
+}
+
+.header-warning, .header-5-warning, .header-4-warning, .header-3-warning, .header-2-warning, .header-1-warning {
+  color: #ffc107;
+}
+
+.header-danger, .header-5-danger, .header-4-danger, .header-3-danger, .header-2-danger, .header-1-danger {
+  color: #dc3545;
+}
+
+.header-1, .header-1-danger, .header-1-warning, .header-1-success, .header-1-secondary, .header-1-primary {
   font-size: 32px;
 }
 
-.h2 {
+.header-2, .header-2-danger, .header-2-warning, .header-2-success, .header-2-secondary, .header-2-primary {
   font-size: 28.8px;
 }
 
-.h3 {
+.header-3, .header-3-danger, .header-3-warning, .header-3-success, .header-3-secondary, .header-3-primary {
   font-size: 25.6px;
 }
 
-.h4 {
+.header-4, .header-4-danger, .header-4-warning, .header-4-success, .header-4-secondary, .header-4-primary {
   font-size: 22.4px;
 }
 
-.h5 {
+.header-5, .header-5-danger, .header-5-warning, .header-5-success, .header-5-secondary, .header-5-primary {
   font-size: 19.2px;
 }
 
-h1 {
-  color: #007bff;
+.input, .input-danger, .input-danger-xl, .input-danger-l, .input-danger-m, .input-danger-s, .input-warning, .input-warning-xl, .input-warning-l, .input-warning-m, .input-warning-s, .input-success, .input-success-xl, .input-success-l, .input-success-m, .input-success-s, .input-secondary, .input-secondary-xl, .input-secondary-l, .input-secondary-m, .input-secondary-s, .input-primary, .input-primary-xl, .input-primary-l, .input-primary-m, .input-primary-s, .input-xl, .input-l, .input-m, .input-s {
+  padding: 16px;
+  border: 5px solid black;
+  font-size: 20px;
+}
+
+.input-s, .input-danger-s, .input-warning-s, .input-success-s, .input-secondary-s, .input-primary-s {
+  width: 50px;
+}
+
+.input-m, .input-danger-m, .input-warning-m, .input-success-m, .input-secondary-m, .input-primary-m {
+  width: 100px;
+}
+
+.input-l, .input-danger-l, .input-warning-l, .input-success-l, .input-secondary-l, .input-primary-l {
+  width: 200px;
+}
+
+.input-xl, .input-danger-xl, .input-warning-xl, .input-success-xl, .input-secondary-xl, .input-primary-xl {
+  width: 300px;
+}
+
+.input-primary, .input-primary-xl, .input-primary-l, .input-primary-m, .input-primary-s {
+  background-color: #007bff;
+}
+
+.input-secondary, .input-secondary-xl, .input-secondary-l, .input-secondary-m, .input-secondary-s {
+  background-color: #6c757d;
+}
+
+.input-success, .input-success-xl, .input-success-l, .input-success-m, .input-success-s {
+  background-color: #28a745;
+}
+
+.input-warning, .input-warning-xl, .input-warning-l, .input-warning-m, .input-warning-s {
+  background-color: #ffc107;
+}
+
+.input-danger, .input-danger-xl, .input-danger-l, .input-danger-m, .input-danger-s {
+  background-color: #dc3545;
 }
 
 .box-out {
   width: 700px;
-  background-color: aqua;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=main.css.map */

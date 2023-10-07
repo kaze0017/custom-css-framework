@@ -171,9 +171,9 @@ $cols: (
 );
 $gaps: (
   none: 0,
-  s: $spacing-unit * 0.5,
-  m: $spacing-unit,
-  l: $spacing-unit * 2,
+  s: $spacing-unit,
+  m: $spacing-unit * 2,
+  l: $spacing-unit * 4,
 );
 
 // Expandables for streaching grid items

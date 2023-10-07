@@ -1,0 +1,46 @@
+.input {
+  padding: $spacing-unit;
+  border: 5px solid black;
+  font-size: 20px;
+}
+
+$input-sizes: (
+  s: $w50,
+  m: $w100,
+  l: $w200,
+  xl: $w300,
+);
+
+$input-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: $warning-color,
+  danger: $danger-color,
+);
+
+// Create utility classes for button sizes
+@each $size, $width in $input-sizes {
+  .input-#{$size} {
+    @extend .input;
+    width: $width;
+  }
+}
+
+// Create utility classes for button colors
+@each $color, $bg-color in $input-colors {
+  .input-#{$color} {
+    @extend .input;
+    background-color: $bg-color;
+  }
+}
+
+// Create utility classes for button sizes and colors
+@each $size, $width in $input-sizes {
+  @each $color, $bg-color in $input-colors {
+    .input-#{$color}-#{$size} {
+      @extend .input-#{$color};
+      @extend .input-#{$size};
+    }
+  }
+}

@@ -276,3 +276,183 @@ function generateStringGrid() {
   document.getElementById("sampleGrid").setAttribute("class", generatedString);
   document.getElementById("generatedGridClass").value = generatedString;
 }
+// Inputs**********************************************************************************************************************
+
+const inputOptions = document.getElementById("inputOptions");
+const inputOptionsArray = ["s", "m", "l", "xl"];
+inputOptions.innerHTML += `<h2 class="h3">Input Width</h2>`;
+inputOptionsArray.forEach(
+  (option) =>
+    (inputOptions.innerHTML += `<label>
+              <input
+                class="input-width m-1"
+                type="radio"
+                name="inputWidth"
+                value="${option}"
+                ${option === "m" ? "checked" : ""}
+              />
+              ${option}
+            </label>`)
+);
+const inputColors = document.getElementById("inputColors");
+const inputColorsArray = [
+  "primary",
+  "secondary",
+  "success",
+  "warning",
+  "danger",
+];
+inputOptions.innerHTML += `<h2 class="h3">Input Color</h2>`;
+
+inputColorsArray.forEach(
+  (option) =>
+    (inputOptions.innerHTML += `<label>
+              <input
+                class="input-colors m-1"
+                type="radio"
+                name="inputColors"
+                value="${option}"
+                ${option === "primary" ? "checked" : ""}
+              />
+              ${option}
+            </label>`)
+);
+
+const generatedInputClass = document.getElementById("generatedInputClass");
+generatedInputClass.innerHTML += `<input type="text" id="generatedInputClassInput" value="" readonly /><button id='btnCopyinputClass'>Copy</button>;`;
+
+let inputOptions1 = document.querySelectorAll(".input-width");
+let inputOptions2 = document.querySelectorAll(".input-colors");
+
+// Add event listeners to both groups of radio buttons
+inputOptions1.forEach(function (button) {
+  button.addEventListener("change", () => generateStringInput());
+});
+inputOptions2.forEach(function (button) {
+  button.addEventListener("change", () => generateStringInput());
+});
+
+// Function to generate the string based on selected values
+function generateStringInput() {
+  let group1Value = getValueOfSelectedRadio(inputOptions1);
+  let group2Value = getValueOfSelectedRadio(inputOptions2);
+
+  // Create the string based on selected values
+  let generatedString = `input-${group2Value}-${group1Value}`;
+
+  // Update the input element with the generated string
+  generatedInputClass.value = generatedString;
+  document.getElementById("sampleInput").setAttribute("class", generatedString);
+  document.getElementById("generatedInputClassInput").value = generatedString;
+}
+document
+  .getElementById("btnCopyinputClass")
+  .addEventListener("click", copyTextInput);
+function copyTextInput() {
+  // Get the input field
+  let inputField = document.getElementById("generatedInputClassInput");
+
+  // Select the text in the input field
+  inputField.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Deselect the text
+  inputField.setSelectionRange(0, 0);
+}
+
+// Headers**********************************************************************************************************************
+const headerOptions = document.getElementById("headerOptions");
+const headerOptionsArray = [1, 2, 3, 4, 5];
+headerOptions.innerHTML += `<h2 class="header-3">Header Size</h2>`;
+headerOptionsArray.forEach(
+  (option) =>
+    (headerOptions.innerHTML += `<label>
+              <input
+                class="header-size m-1"
+                type="radio"
+                name="headerSize"
+                value="${option}"
+                ${option === 1 ? "checked" : ""}
+              />
+              ${option}
+            </label>`)
+);
+const headerColors = ["primary", "secondary", "success", "warning", "danger"];
+headerOptions.innerHTML += `<h2 class="header-3">Header Color</h2>`;
+headerColors.forEach(
+  (option) =>
+    (headerOptions.innerHTML += `<label>
+              <input
+                class="header-colors m-1"
+                type="radio"
+                name="headerColors"
+                value="${option}"
+                ${option === "primary" ? "checked" : ""}
+              />
+              ${option}
+            </label>`)
+);
+
+const generatedHeaderClass = document.getElementById("generatedHeaderClass");
+generatedHeaderClass.innerHTML += `<input type="text" id="generatedHeaderClassInput" value="" readonly /><button id='btnCopyHeaderClass'>Copy</button>;`;
+
+let headerOptions1 = document.querySelectorAll(".header-size");
+let headerOptions2 = document.querySelectorAll(".header-colors");
+
+// Add event listeners to both groups of radio buttons
+headerOptions1.forEach(function (button) {
+  button.addEventListener("change", () => generateStringHeader());
+});
+headerOptions2.forEach(function (button) {
+  button.addEventListener("change", () => generateStringHeader());
+});
+
+// Function to generate the string based on selected values
+function generateStringHeader() {
+  let group1Value = getValueOfSelectedRadio(headerOptions1);
+  let group2Value = getValueOfSelectedRadio(headerOptions2);
+
+  // Create the string based on selected values
+  let generatedString = `header-${group1Value}-${group2Value}`;
+
+  // Update the input element with the generated string
+  generatedHeaderClass.value = generatedString;
+  document
+    .getElementById("sampleHeader")
+    .setAttribute("class", generatedString);
+  document.getElementById("generatedHeaderClassInput").value = generatedString;
+}
+
+document
+  .getElementById("btnCopyHeaderClass")
+  .addEventListener("click", copyTextHeader);
+function copyTextHeader() {
+  // Get the input field
+  let inputField = document.getElementById("generatedHeaderClassInput");
+
+  // Select the text in the input field
+  inputField.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Deselect the text
+  inputField.setSelectionRange(0, 0);
+}
+
+const h1s = document.querySelectorAll("h1");
+h1s.forEach((h1) => {
+  h1.classList.add("header-1-primary");
+});
+
+const h2s = document.querySelectorAll("h2");
+h2s.forEach((h2) => {
+  h2.classList.add("header-2-secondary");
+});
+
+const h3s = document.querySelectorAll("h3");
+h3s.forEach((h3) => {
+  h3.classList.add("header-3-success");
+});

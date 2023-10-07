@@ -5,8 +5,32 @@ $header-sizes: (
   4: $heading-font-size * 0.7,
   5: $heading-font-size * 0.6,
 );
+
+$header-colors: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: $warning-color,
+  danger: $danger-color,
+);
+
+@each $color, $value in $header-colors {
+  .header-#{$color} {
+    color: $value;
+  }
+}
+
 @each $size, $value in $header-sizes {
-  .h#{$size} {
+  .header-#{$size} {
     font-size: $value;
+  }
+}
+
+@each $size, $value in $header-sizes {
+  @each $color, $bg-color in $header-colors {
+    .header-#{$size}-#{$color} {
+      @extend .header-#{$color};
+      @extend .header-#{$size};
+    }
   }
 }

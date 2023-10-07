@@ -31,12 +31,29 @@ $xl-breakpoint: 1200px;
 // Spacing
 $spacing-unit: 16px;
 
-// Typography
-$base-font-family: Arial, sans-serif;
-$base-font-size: 16px;
-$heading-font-family: "Helvetica Neue", sans-serif;
-$heading-font-size: 32px;
-
 // Border
 $border-width: 1px;
 $border-radius: 4px;
+
+// Typography
+// Font Sizes
+$base-font-family: Arial, sans-serif;
+$heading-font-family: "Helvetica Neue", sans-serif;
+$base-font-size: 16px;
+$heading-font-size: 32px;
+$heading1-font-size: 2em;
+$heading2-font-size: 1.5em;
+$heading3-font-size: 1.2em;
+$base-font-size: 40px;
+$small-font-size: 0.8em;
+
+// Line Heights
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Font Weights
+$normal-font-weight: normal;
+$bold-font-weight: bold;
+
+// Text Colors
+$text-color: #333;

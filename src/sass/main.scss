@@ -8,11 +8,7 @@
 @import "headers";
 @import "inputs";
 
-h1 {
-  color: $primary-color;
-}
-
 .box-out {
   width: 700px;
-  background-color: aqua;
+  border: 1px solid red;
 }
