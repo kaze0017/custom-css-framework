@@ -76,5 +76,24 @@ input-primary-l{
     width: 100px;
 }
 
+input-weight{
+  font-weight: bold;
+  font-weight: bolder;
+  font-weight: lighter;
+}
+
+input-margin{
+  margin: 10px;
+  margin:20px;
+  margin:30px;
+}
+
+input-padding{
+  padding: 15px;
+  padding: 20px;
+  padding: 30;
+}
+
+
 // do input small, medium, mix it all up do a variety 
 // borders, margins, colours, padding, font size, font weight
