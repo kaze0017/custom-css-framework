@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-$sm-breakpoint: 576px;
-$md-breakpoint: 768px;
-$lg-breakpoint: 992px;
-$xl-breakpoint: 1200px;
 $breakPoints: (
   sm: $sm-breakpoint,
   md: $md-breakpoint,
@@ -175,7 +171,7 @@ $cols: (
 );
 $gaps: (
   none: 0,
-  s: $spacing-unit / 2,
+  s: $spacing-unit * 0.5,
   m: $spacing-unit,
   l: $spacing-unit * 2,
 );

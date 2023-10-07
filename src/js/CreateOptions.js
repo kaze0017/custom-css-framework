@@ -5,6 +5,7 @@ export default function CreateOptions(
   elementsToTarget
 ) {
   const div = document.getElementById(divId);
+  div.classList.add("m-1");
   optionsArray.forEach(
     (option, index) =>
       (div.innerHTML += `<label>
@@ -19,7 +20,7 @@ export default function CreateOptions(
               ${option}
             </label>`)
   );
-  div.innerHTML += `        <input type="text" id="generatedClassFor${divId}" value="${classPrefix}-1" readonly />
+  div.innerHTML += `        <input type="text" id="generatedClassFor${divId}" value="${classPrefix}" readonly />
   <button id="copyGenerated${divId}">Copy</button>`;
 
   const optionsBtns = document.querySelectorAll(`.${divId}-option`);

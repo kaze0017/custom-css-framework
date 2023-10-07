@@ -139,15 +139,15 @@ let generatedLiClass = document.getElementById("generatedLiClass");
 
 // Add event listeners to both groups of radio buttons
 group1Lists.forEach(function (button) {
-  button.addEventListener("change", generateStringLi);
+  button.addEventListener("change", () => generateStringLi("sampleLi"));
 });
 
 group2Lists.forEach(function (button) {
-  button.addEventListener("change", generateStringLi);
+  button.addEventListener("change", () => generateStringLi("sampleLi"));
 });
 
 // Function to generate the string based on selected values
-function generateStringLi() {
+function generateStringLi(inputIdToSet) {
   let group1Value = getValueOfSelectedRadio(group1Lists);
   let group2Value = getValueOfSelectedRadio(group2Lists);
 
@@ -158,7 +158,7 @@ function generateStringLi() {
 
   // Update the input element with the generated string
   generatedLiClass.value = generatedString;
-  document.getElementById("sampleLi").setAttribute("class", generatedString);
+  document.getElementById(inputIdToSet).setAttribute("class", generatedString);
 }
 
 // const inputField = document.getElementById("btnText");
@@ -239,13 +239,13 @@ let gridOptions3 = document.querySelectorAll(".grid-options-col-gap");
 
 // Add event listeners to both groups of radio buttons
 gridOptions1.forEach(function (button) {
-  button.addEventListener("change", generateStringGrid);
+  button.addEventListener("change", () => generateStringGrid());
 });
 gridOptions2.forEach(function (button) {
-  button.addEventListener("change", generateStringGrid);
+  button.addEventListener("change", () => generateStringGrid());
 });
 gridOptions3.forEach(function (button) {
-  button.addEventListener("change", generateStringGrid);
+  button.addEventListener("change", () => generateStringGrid());
 });
 
 // Function to generate the string based on selected values
@@ -274,4 +274,5 @@ function generateStringGrid() {
   // Update the input element with the generated string
   generatedLiClass.value = generatedString;
   document.getElementById("sampleGrid").setAttribute("class", generatedString);
+  document.getElementById("generatedGridClass").value = generatedString;
 }

@@ -128,7 +128,7 @@
             </label>
             <label>
               <input class="btn-size" type="radio" name="size" value="s" />
-              Small (60px)
+              Small (0.5 * $base-width)
             </label>
             <label>
               <input
@@ -138,11 +138,11 @@
                 value="m"
                 checked
               />
-              Medium (100px)
+              Medium ($base-width)
             </label>
             <label>
               <input class="btn-size" type="radio" name="size" value="l" />
-              Large (200px)
+              Large (2 * $base-width)
             </label>
           </div>
         </div>
@@ -272,7 +272,7 @@
 
         <!-- Out Put -->
         <div>
-          <input type="text" id="generatedGtidClass" value="grid" readonly />
+          <input type="text" id="generatedGridClass" value="grid" readonly />
           <button id="gridCopyButton">Copy</button>
         </div>
       </div>
