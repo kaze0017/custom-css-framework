@@ -5,6 +5,29 @@ $success-color: #28a745;
 $danger-color: #dc3545;
 $warning-color: #ffc107;
 
+// Sizes (WIDTH)
+$base-width: 100px;
+$w10: 0.1 * $base-width;
+$w20: 0.2 * $base-width;
+$w30: 0.3 * $base-width;
+$w40: 0.4 * $base-width;
+$w50: 0.5 * $base-width;
+$w60: 0.6 * $base-width;
+$w70: 0.7 * $base-width;
+$w80: 0.8 * $base-width;
+$w90: 0.9 * $base-width;
+$w100: $base-width;
+$w200: 2 * $base-width;
+$w300: 3 * $base-width;
+$w400: 4 * $base-width;
+$w500: 5 * $base-width;
+
+// Responsive Breakpoints
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
 // Spacing
 $spacing-unit: 16px;
 
@@ -17,9 +40,3 @@ $heading-font-size: 32px;
 // Border
 $border-width: 1px;
 $border-radius: 4px;
-
-// Responsive Breakpoints
-$sm-breakpoint: 576px;
-$md-breakpoint: 768px;
-$lg-breakpoint: 992px;
-$xl-breakpoint: 1200px;

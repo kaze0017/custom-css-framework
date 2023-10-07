@@ -5,9 +5,9 @@
 }
 
 $button-sizes: (
-  s: 60px,
-  m: 100px,
-  l: 200px,
+  s: $w50,
+  m: $w100,
+  l: $w200,
 );
 
 $button-colors: (
